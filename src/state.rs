@@ -33,7 +33,7 @@ impl Pack for Escrow {
 		    temp_token_account_pubkey,
 		    initializer_token_to_receive_account_pubkey,
 		    expected_amount,
-		) = array_ref![src, 1, 32, 32, 32, 8];
+		) = array_refs![src, 1, 32, 32, 32, 8];
 		let is_initialized = match is_initialized {
 		    [0] => false,
 		    [1] => true,
